@@ -333,6 +333,12 @@ p.thicker {font-weight:900;}
 			map: map,
 			title:"41.060303,29.009762"
 		});
+		var infowindow = new google.maps.InfoWindow({
+			content: "Ideabureau office"
+			});
+			google.maps.event.addListener(marker, "click", function() {
+				infowindow.open(map, marker);
+			});
 	}
 </script>
 
@@ -526,7 +532,9 @@ $(function(){
         <div class="page_container">
      
 
-              
+                </div>
+
+  
      <div id="container" > 
    <div class="wrapper">
 
@@ -547,7 +555,7 @@ $(function(){
            </td>
            
           <td > </div><div style="position:relative; z-index:2; background-color:#FFF; FILTER:alpha(opacity=10);opacity:0.8;">
-            <td >   <h1>Contact us</h1>
+             <h1>Contact us</h1>
          <h3> <b>We love meeting new people!</h3>
 <h3><b>Address: Fuat <!--anti bot measure-->Sarp Sok. 1/2, Besiktas 34349</b></h3>
        
