@@ -316,9 +316,9 @@ p.thicker {font-weight:900;}
 	// You can find the free service at: http://www.MapsEasy.com     
 	///////////////////////////////////////////////////////////////////
 	function LoadGmaps() {
-		var myLatlng = new google.maps.LatLng(39.5555066,26.6511693);
+		var myLatlng = new google.maps.LatLng(41.0603068,29.0097601);
 		var myOptions = {
-			zoom: 10,
+			zoom: 15,
 			center: myLatlng,
 			disableDefaultUI: true,
 			navigationControl: false,
@@ -331,14 +331,8 @@ p.thicker {font-weight:900;}
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map,
-			title:"39.568117,26.643219"
+			title:"41.060303,29.009762"
 		});
-		var infowindow = new google.maps.InfoWindow({
-			content: "Idapur Ciftligi"
-			});
-			google.maps.event.addListener(marker, "click", function() {
-				infowindow.open(map, marker);
-			});
 	}
 </script>
 
@@ -583,7 +577,7 @@ $(function(){
            <!-- 
   	    </div><div style="position:left;">
   	    <img src="http://behance.vo.llnwd.net/profiles4/106034/projects/8810085/056717a454cf7d58535068e441cb45ae.png" class="bg">
-        -->  
+
       </section>
       
     </div>
@@ -595,6 +589,8 @@ Welcome to the idea bureau &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nb
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ·&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Copyright © 2013 theideabureau All rights reserved. </marquee></font></a></a>
  
   </div>
+  
+  --> 
   
           <body onload="LoadGmaps()" onunload="GUnload()">
 <!-- Maps DIV : you can move the code below to where you want the maps to be displayed -->
