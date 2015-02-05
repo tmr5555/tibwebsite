@@ -13,37 +13,22 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/jquery.lightbox-0.5.css">
   <script type="text/javascript" charset="utf-8" src="js/jquery.lightbox-0.5.min.js"></script>
  
-        
-          <script type="text/javascript">
- 
-  var ua = navigator.userAgent;
-
-var checker = {
-
-iOS: ua.match(/(iPhone|iPod|iPad)/) };
-
-if (checker.iOS) { window.location = "http://theidea.pancakeapps.com/";
-
-};
-
+<script type="text/javascript">
+<!--
+if (screen.width <= 699) {
+document.location = "mobile.html";
+}
+//-->
 </script>
 
-
-
-  
-  <script type="text/javascript">
- <!--
-  if (screen.width <= 700) {
-  window.location = "http://theidea.pancakeapps.com/";
-  }
-  else if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-   location.replace("http://theidea.pancakeapps.com/");
+<script language=javascript>
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://url-to-send-them/iphone.html");
 }
-else if ((navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i))) {
-   location.replace("http://theidea.pancakeapps.com/");
-}
- //-->
+-->
 </script>
+
   
  
   <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
